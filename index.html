@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nicko's PHINMA Experience</title>
+  <title>Jerry & Jaycee’s PHINMA Experience</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Tailwind config for custom font -->
@@ -24,6 +24,7 @@
     }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+
   <style>
     .fade-up {
       opacity: 0;
@@ -39,6 +40,26 @@
         transform: translateY(0);
       }
     }
+
+    /* Portrait video styles */
+    .portrait-wrapper {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .aspect-portrait {
+      position: relative;
+      width: 100%;
+      padding-bottom: 177.78%; /* 9:16 aspect ratio */
+    }
+    .aspect-portrait video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      border-radius: 12px;
+    }
   </style>
 </head>
 
@@ -49,7 +70,6 @@
     <div class="absolute inset-0 bg-primary/90"></div>
     <div class="relative z-10 px-4">
       <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between fade-up delay-1 space-y-6 md:space-y-0">
-        
         <div class="hidden md:block w-1/4">
           <img src="assets/coc.png" alt="COC Logo" class="w-full max-w-[250px] mx-auto drop-shadow-xl">
         </div>
@@ -66,11 +86,11 @@
     </div>
   </header>
 
-  <!-- AUTHOR -->
+  <!-- AUTHORS -->
   <section class="py-20 bg-gray-50 text-center fade-up delay-2">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-4xl font-title text-primary hover:scale-105 transition-transform">Nicko Domongdong</h2>
-      <p class="mt-2 text-gray-600 text-lg">BSBA Student • Scholarship Recipient • Passionate Learner</p>
+    <div class="max-w-6xl mx-auto px-4 space-y-6">
+      <h2 class="text-4xl font-title text-primary hover:scale-105 transition-transform">Jerry Balestors & Jaycee Micko Dela Cruz</h2>
+      <p class="mt-2 text-gray-600 text-lg">BSBA Students • Scholarship Recipients • Future Marketing Leaders</p>
     </div>
   </section>
 
@@ -123,38 +143,84 @@
   <section class="bg-white py-20 fade-up delay-3">
     <div class="max-w-6xl mx-auto px-4 text-center space-y-6">
       <h2 class="text-3xl font-title text-primary">Why Marketing Management?</h2>
-      <p class="text-lg">Marketing management is the art and method of comprehending people's requirements and desires and figuring out how to effectively reach them. It's not only about making sales. It all comes down to connecting. It all boils down to knowing your audience, telling a compelling story, and building credibility over time. Whether you're starting out in business, running a small company, or managing a brand, marketing management helps you turn ideas into action.</p>
+      <p class="text-lg">Marketing management is the art and method of comprehending people's requirements and desires and figuring out how to effectively reach them. It's not only about making sales. It all comes down to connecting. It all boils down to knowing your audience, telling a compelling story, and building credibility over time.</p>
       <p class="text-lg">The goal of marketing management is to add value for consumers while supporting business growth. It's about making a profit while keeping the customer in mind.</p>
     </div>
   </section>
 
-  <!-- BENEFITS & OPPORTUNITIES -->
-  <section class="bg-primary text-white py-24 fade-up delay-2">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
-      <div>
-        <h3 class="text-2xl font-title text-accent mb-4">Benefits</h3>
-        <ul class="space-y-2 list-inside list-disc">
-          <li>Become more empathetic toward others</li>
-          <li>Make wiser decisions</li>
-          <li>Grow your business</li>
-          <li>Make sincere connections</li>
-          <li>Utilize your resources as much as possible</li>
-          <li>Develop your career</li>
-          <li>Stay adaptable</li>
-          <li>Create a lasting impression</li>
-        </ul>
+  <!-- VIDEO VLOG -->
+  <section class="bg-gray-100 py-24 fade-up delay-2">
+    <div class="max-w-6xl mx-auto px-4 text-center space-y-8">
+      <h2 class="text-4xl font-title text-primary">Video Vlog</h2>
+      <p class="text-lg text-gray-700">Watch Jerry and Jaycee share their PHINMA journey through their vlogs.</p>
+      <div class="grid md:grid-cols-2 gap-8 justify-center">
+        <div>
+          <h3 class="text-2xl font-title text-primary mb-4">Jerry Balestors</h3>
+          <div class="portrait-wrapper">
+            <div class="aspect-portrait bg-black rounded-lg overflow-hidden shadow-lg">
+              <video src="assets/jerry_vlog.mp4" controls playsinline></video>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-title text-primary mb-4">Jaycee Micko Dela Cruz</h3>
+          <div class="portrait-wrapper">
+            <div class="aspect-portrait bg-black rounded-lg overflow-hidden shadow-lg">
+              <video src="assets/jaycee_vlog.mp4" controls playsinline></video>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h3 class="text-2xl font-title text-accent mb-4">Opportunities</h3>
-        <ul class="space-y-2 list-inside list-disc">
-          <li>Start a business</li>
-          <li>Work in any economic sector</li>
-          <li>Branding and promotion</li>
-          <li>Analysis of the market</li>
-          <li>Sales and business development</li>
-          <li>Possibilities for independent employment</li>
-          <li>Jobs overseas</li>
-        </ul>
+    </div>
+  </section>
+
+  <!-- PROMOTIONAL VIDEO -->
+  <section class="bg-white py-24 fade-up delay-3">
+    <div class="max-w-6xl mx-auto px-4 text-center space-y-8">
+      <h2 class="text-4xl font-title text-primary">Promotional Video</h2>
+      <p class="text-lg text-gray-700">Get inspired by Jerry and Jaycee’s creative promotional videos about PHINMA COC.</p>
+      <div class="grid md:grid-cols-2 gap-8 justify-center">
+        <div>
+          <h3 class="text-2xl font-title text-primary mb-4">Jerry Balestors</h3>
+          <div class="portrait-wrapper">
+            <div class="aspect-portrait bg-black rounded-lg overflow-hidden shadow-lg">
+              <video src="assets/jerry_promo.mp4" controls playsinline></video>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-title text-primary mb-4">Jaycee Micko Dela Cruz</h3>
+          <div class="portrait-wrapper">
+            <div class="aspect-portrait bg-black rounded-lg overflow-hidden shadow-lg">
+              <video src="assets/jaycee_promo.mp4" controls playsinline></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOTIVATIONAL QUOTES -->
+  <section class="bg-primary text-white py-24 fade-up delay-3">
+    <div class="max-w-6xl mx-auto px-4 text-center space-y-12">
+      <h2 class="text-4xl font-title text-accent">Motivational Quotes</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white/10 p-6 rounded-xl shadow-md">
+          <h3 class="text-2xl font-title text-accent mb-4">Jerry Balestors</h3>
+          <ul class="space-y-4 text-lg italic">
+            <li>“Giving up won’t make you rich.”</li>
+            <li>“Real things take time.”</li>
+            <li>“Don’t do illegal things to make you happy.”</li>
+          </ul>
+        </div>
+        <div class="bg-white/10 p-6 rounded-xl shadow-md">
+          <h3 class="text-2xl font-title text-accent mb-4">Jaycee Micko Dela Cruz</h3>
+          <ul class="space-y-4 text-lg italic">
+            <li>“Success is a daily habit, not a one-time transformation.”</li>
+            <li>“Never say less than necessary.”</li>
+            <li>“No one is impressed by your possessions as much as you are.”</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -164,12 +230,12 @@
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-title text-primary text-center mb-8">Student Journey</h2>
       <div class="bg-gray-100 p-6 rounded-lg shadow-md space-y-4">
-        <h3 class="text-xl font-title text-accent">Nicko's Reflections</h3>
-        <p>My journey at PHINMA COC has been filled with growth, laughter, and meaningful experiences. From the very first day, I felt welcomed by the community—everyone, from the instructors to my fellow students, made it easy to feel at home.</p>
-        <p>One of the moments I’ll always remember was during a campus event where we showcased our talents and bonded with other students. It was more than just fun—it reminded me that learning doesn’t only happen in the classroom. It happens in the friendships we build and the confidence we gain from trying new things.</p>
-        <p>As a BSBA student, I’ve been challenged to think more critically and apply what I’ve learned in real-world scenarios. The lessons here aren’t just academic—they’re life lessons that I know will help shape my future. The instructors don’t just teach; they guide and encourage us every step of the way.</p>
-        <p>I’m also very thankful to be a recipient of the HK Scholarship. Having 50% of my tuition covered has really helped lessen the financial burden on my family and allowed me to focus on what matters most—my education and personal development.</p>
-        <p>PHINMA COC is more than just a school to me. It’s a place where I’ve discovered my potential, found true friends, and built a clearer vision of the future I want to achieve.</p>
+        <h3 class="text-xl font-title text-accent">Jerry & Jaycee’s Reflections</h3>
+        <p>Our journey at PHINMA COC has been filled with growth, laughter, and meaningful experiences. From the very first day, we felt welcomed by the community—everyone, from the instructors to our fellow students, made it easy to feel at home.</p>
+        <p>One of the moments we’ll always remember was during a campus event where we showcased our creativity and bonded with other students. It was more than just fun—it reminded us that learning doesn’t only happen in the classroom. It happens in the friendships we build and the confidence we gain from trying new things.</p>
+        <p>As BSBA students, we’ve been challenged to think critically and apply what we’ve learned in real-world scenarios. The lessons here aren’t just academic—they’re life lessons that will shape our future. The instructors don’t just teach; they guide and encourage us every step of the way.</p>
+        <p>We’re also grateful to be scholarship recipients. Having a portion of our tuition covered has helped us focus more on our studies and personal growth without the financial stress.</p>
+        <p>PHINMA COC is more than just a school to us—it’s a place where we’ve discovered our potential, found true friends, and built a clearer vision of the future we want to achieve.</p>
       </div>
     </div>
   </section>
@@ -180,9 +246,7 @@
       <h2 class="text-3xl font-title text-accent">Padayon!</h2>
       <p>Max Suniel Street, Carmen, Cagayan de Oro City, 9000</p>
       <p>Contact: 0917-376-5105</p>
-      <p>
-        <a href="https://www.phinma.edu.ph/" target="_blank" class="text-yellow-300 underline hover:text-yellow-400 transition">phinma.edu.ph</a>
-      </p>
+      <p><a href="https://www.phinma.edu.ph/" target="_blank" class="text-yellow-300 underline hover:text-yellow-400 transition">phinma.edu.ph</a></p>
     </div>
   </footer>
 
